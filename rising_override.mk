@@ -1,0 +1,1 @@
+LINEAGE_DISPLAY_VERSION := RisingOS_Revived_waffle_CustomName-$(RISING_BUILD_VERSION)
