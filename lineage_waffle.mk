@@ -38,5 +38,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-TARGET_INCLUDE_ACCORD := false
-TARGET_HAS_UDFPS := true
+# Override some Rising stuff.
+$(call inherit-product, vendor/lineage/config/version.mk)
+$(call inherit-product, device/oneplus/waffle/rising_override.mk)
+include device/oneplus/waffle/overrides.mk
