@@ -14,6 +14,12 @@ $(call inherit-product, device/oneplus/waffle/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Include flags.mk
+include device/oneplus/waffle/flags.mk
+
+# Include naming.mk
+include device/oneplus/waffle/naming.mk
+
 PRODUCT_NAME := lineage_waffle
 PRODUCT_DEVICE := waffle
 PRODUCT_MANUFACTURER := OnePlus
